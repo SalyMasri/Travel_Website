@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us - Travel Agency</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+<!-- Header section starts -->
+<header class="header">
+   <a href="home.html" class="logo">GLOBEETTER</a>
+   <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="book.html">Book</a>
+      <a href="contact.html" class="active">Contact</a>
+   </nav>
+   <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+<!-- Header section ends -->
+
+<div class="heading" style="background:url(images/header-bg-2.png) no-repeat">
+   <h1>Contact</h1>
+</div>
+
+<!-- Contact section starts -->
+<section class="contact">
+   <div class="content">
+      <h2 class="heading-title">Contact Us</h2>
+      <p class="contact-intro">If you have any questions, please do not hesitate to get in touch with us.</p>
+   </div>
+   <div class="container">
+      <div class="contactInfo">
+         <div class="box">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text">
+               <h3>Address</h3>
+               <p>Gamla Stan, Stockholm, Sweden - 111 29</p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+               <h3>Phone</h3>
+               <p>+46-8-123-4567<br>+46-8-765-4321</p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+               <h3>Email</h3>
+               <p>visitstockholm@fakemail.se</p>
+            </div>
+         </div>
+      </div>
+      <div id="notification" style="display: none; background-color: green; color: white; padding: 10px; text-align: center;">
+         Message sent successfully!
+     </div>
+     
+      <div class="contactForm">
+         <form action="submit_form.php" method="POST">
+           <h3>Send Message</h3>
+           <div class="inputBox">
+             <label for="fullname">Full Name</label>
+             <input type="text" id="fullname" name="fullname" required="required">
+           </div>
+           <div class="inputBox">
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" required="required">
+           </div>
+           <div class="inputBox">
+             <label for="message">Type your Message...</label>
+             <textarea id="message" name="message" required="required"></textarea>
+           </div>
+           <div class="inputBox">
+             <input type="submit" value="Send">
+           </div>
+         </form>
+     </div>
+   </div>
+</section>
+<!-- Contact section ends -->
+
+<!-- Footer section starts -->
+<section class="footer">
+   <div class="box-container">
+      <div class="box">
+         <h3>Quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> Package</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> Book</a>
+      </div>
+      <div class="box">
+         <h3>Extra links</h3>
+         <a href="contact.html"> <i class="fas fa-angle-right"></i> Ask Questions</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> About Us</a>
+      </div>
+      <div class="box">
+         <h3>Contact Info</h3>
+         <a href="contact.html"> <i class="fas fa-phone"></i> +46-8-123-4567 </a>
+         <a href="contact.html"> <i class="fas fa-phone"></i> +46-8-765-4321 </a>
+         <a href="contact.html"> <i class="fas fa-envelope"></i> visitstockholm@fakemail.se </a>
+         <a href="contact.html"> <i class="fas fa-map"></i> Gamla Stan, Stockholm, Sweden - 111 29 </a>
+     </div>
+   </div>
+</section>
+<!-- Footer section ends -->
+
+<!-- Custom JS file links -->
+<script src="js/script.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+</html>

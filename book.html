@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book</title>
+
+   <!-- Swiper CSS link -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- Custom CSS file link -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+<!-- Header section starts -->
+<header class="header">
+   <a href="home.html" class="logo">GLOBEETTER</a>
+   <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="book.html">Book</a>
+      <a href="contact.html" class="active">Contact</a>
+   </nav>
+   <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+<!-- Header section ends -->
+
+<div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+   <h1>Book Now</h1>
+</div>
+
+<!-- Booking section starts -->
+<section class="booking">
+   <h2 class="heading-title">Book Your Trip!</h2>
+   <form action="book_form.php" method="post" class="book-form">
+      <div class="flex">
+         <div class="inputBox">
+            <span>Name:</span>
+            <input type="text" placeholder="Enter your name" maxlength="30" name="name">
+         </div>
+         <div class="inputBox">
+            <span>Email:</span>
+            <input type="email" placeholder="Enter your email" maxlength="50" name="email">
+         </div>
+         <div class="inputBox">
+            <span>Phone:</span>
+            <input type="tel" placeholder="Enter your number" pattern="[0-9]{10}" name="phone">
+         </div>
+         <div class="inputBox">
+            <span>Address:</span>
+            <input type="text" placeholder="Enter your address" maxlength="50" name="address">
+         </div>
+         <div class="inputBox">
+            <span>Where to:</span>
+            <input type="text" placeholder="Place you want to visit" maxlength="50" name="location">
+         </div>
+         <div class="inputBox">
+            <span>How Many:</span>
+            <input type="number" min="1" max="99" placeholder="Number of guests" name="guests">
+         </div>
+         <div class="inputBox">
+            <span>Arrivals:</span>
+            <input type="date" name="arrivals">
+         </div>
+         <div class="inputBox">
+            <span>Leaving:</span>
+            <input type="date" name="leaving">
+         </div>
+      </div>
+      <input type="submit" value="Submit" class="btn" name="send">
+   </form>
+</section>
+<!-- Booking section ends -->
+
+<!-- Footer section starts -->
+<section class="footer">
+   <div class="box-container">
+      <div class="box">
+         <h3>Quick Links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> Package</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> Book</a>
+      </div>
+      <div class="box">
+         <h3>Extra Links</h3>
+         <a href="contact.html"> <i class="fas fa-angle-right"></i> Ask Questions</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> About Us</a>
+      </div>
+      <div class="box">
+         <h3>Contact Info</h3>
+         <a href="contact.html"> <i class="fas fa-phone"></i> +46-8-123-4567 </a>
+         <a href="contact.html"> <i class="fas fa-phone"></i> +46-8-765-4321 </a>
+         <a href="contact.html"> <i class="fas fa-envelope"></i> visitstockholm@fakemail.se </a>
+         <a href="contact.html"> <i class="fas fa-map"></i> Gamla Stan, Stockholm, Sweden - 111 29 </a>
+      </div>
+   </div>
+</section>
+<!-- Footer section ends -->
+
+<!-- Swiper JS link -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+</body>
+</html>
